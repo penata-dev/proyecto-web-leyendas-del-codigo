@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cantina Los Recuerdos de Ella en Manrique, Medellín. Licores garantizados, cervezas bien frías y ambiente tradicional de barrio.">
-    <title>Inicio | Cantina Los Recuerdos de Ella</title>
+    <title>Carta | Cantina Los Recuerdos de Ella</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=uEfF5FkTppza&format=png&color=000000" type="image/x-icon">
+    <link rel="stylesheet" href="css/kit.css">
+    <link rel="stylesheet" href="css/carta.css">
+    <link rel="stylesheet" href="css/cerveza_cursor.css">
+     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/84e912a991.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -18,14 +22,14 @@
         <nav class="navbar navbar-expand-lg bg-superficie borde-inferior" aria-label="Navegación principal">
             <div class="container py-1">
                 <a class="navbar-brand" href="index.html">
-                    <span class="status-pulse"></span><img src="https://img.icons8.com/?size=100&id=2eyokYMv9Yng&format=png&color=000000" alt="">CANTINA LOS RECUERDOS DE ELLA
+                    <span class="status-pulse"></span><img src="img/logo.png" width="90px" class="logo-cantina">CANTINA LOS RECUERDOS DE ELLA
                 </a>
                 <button class="navbar-toggler borde-marca" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html"><i class="fa-regular fa-house"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="carta.html">La Carta</a></li>
                         <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
@@ -41,11 +45,121 @@
         </nav>
     </header>
 
-    <main>
-       <h1>La Carta</h1>
+     <main>
+        <section class="carta-hero">
+            <div class="container carta-hero__content">
+                <span class="eyebrow-mono">UN BRINDIS, MUCHOS RECUERDOS</span>
+                <h1 class="display-5 mt-3 mb-3">Nuestra <span class="carta-texto-dorado">Carta</span></h1>
+                <p class="carta-hero__lead">Encuentra tu bebida favorita, descubre nuestros combos y arma tu pedido para compartir buenos momentos.</p>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                    <a class="btn btn-carta-principal" href="#catalogo">Explorar productos <span aria-hidden="true">↓</span></a>
+                    <a class="btn btn-carta-secundario" href="#promociones">Ver promociones</a>
+                </div>
+                <div class="carta-hero__meta mt-4">
+                    <span><i class="carta-punto"></i> Manrique, Medellín</span>
+                    <span>Atención todos los días · 2:00 p.m. a 2:00 a.m.</span>
+                </div>
+            </div>
+        </section>
 
-       
+        <section class="container seccion-carta" id="promociones">
+            <div class="carta-section-heading">
+                <div>
+                    <span class="eyebrow-mono">PARA COMPARTIR</span>
+                    <h2 class="texto-dorado mt-2 mb-2">Promociones de la casa</h2>
+                    <p class="texto-suave mb-0">Combos especiales para que el parche se ponga mejor.</p>
+                </div>
+                <span class="carta-heading-mark">OFERTAS</span>
+            </div>
+
+            <article class="promo-feature">
+                <div class="promo-feature__image" role="img" aria-label="Imagen ilustrativa de bebidas y hielo">
+                    <span class="promo-feature__tag">PROMO DESTACADA</span>
+                </div>
+                <div class="promo-feature__body">
+                    <span class="eyebrow-mono">VIERNES Y SÁBADOS</span>
+                    <h3>Combo Pa' Recordar</h3>
+                    <p>1 botella de Aguardiente Antioqueño + 2 Electrolit + hielo gratis.</p>
+                    <div class="promo-feature__conditions">
+                        <span>Hasta las 12:00 a.m.</span>
+                        <span>Consumo en barra o domicilio en el sector de Manrique.</span>
+                    </div>
+                    <a class="btn btn-carta-principal mt-3" href="https://wa.me/573001234567?text=Hola,%20quiero%20consultar%20por%20el%20Combo%20Pa%27%20Recordar." target="_blank" rel="noopener noreferrer">Consultar promoción</a>
+                    <small class="d-block mt-2 text-secondary">Confirma disponibilidad y condiciones antes de realizar tu pedido.</small>
+                </div>
+            </article>
+        </section>
+
+        <!-- CATÁLOGO -->
+        <section class="container seccion-carta pt-2" id="catalogo">
+            <div class="carta-section-heading">
+                <div>
+                    <span class="eyebrow-mono">DESCUBRE Y ELIGE</span>
+                    <h2 class="texto-dorado mt-2 mb-2">Explora nuestra carta</h2>
+                    <p class="texto-suave mb-0">Encuentra lo que buscas y agrégalo a tu pedido.</p>
+                </div>
+                <button class="btn btn-carrito-resumen d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#panelCarrito" aria-controls="panelCarrito">
+                    Mi pedido <span class="carrito-contador" data-cart-count>0</span>
+                </button>
+            </div>
+
+            <div class="catalogo-tools">
+                <div class="catalogo-search">
+                    <label class="visually-hidden" for="buscadorProductos">Buscar productos</label>
+                    <span aria-hidden="true">⌕</span>
+                    <input id="buscadorProductos" type="search" placeholder="Buscar bebida o marca..." autocomplete="off">
+                    <button id="limpiarBusqueda" type="button" aria-label="Limpiar búsqueda" hidden>×</button>
+                </div>
+                <div class="catalogo-sort">
+                    <label class="visually-hidden" for="ordenProductos">Ordenar productos</label>
+                    <select id="ordenProductos" class="form-select">
+                        <option value="destacados">Ordenar: destacados</option>
+                        <option value="nombre">Nombre: A-Z</option>
+                        <option value="precio-asc">Precio: menor a mayor</option>
+                        <option value="precio-desc">Precio: mayor a menor</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="categorias-lista" id="filtrosCategorias" aria-label="Filtrar por categoría">
+                <button class="categoria-chip is-active" type="button" data-category="todas" aria-pressed="true">Todas</button>
+                <button class="categoria-chip" type="button" data-category="cervezas" aria-pressed="false">Cervezas</button>
+                <button class="categoria-chip" type="button" data-category="aguardientes" aria-pressed="false">Aguardientes</button>
+                <button class="categoria-chip" type="button" data-category="rones" aria-pressed="false">Rones</button>
+                <button class="categoria-chip" type="button" data-category="whiskies" aria-pressed="false">Whiskies</button>
+                <button class="categoria-chip" type="button" data-category="vodkas" aria-pressed="false">Vodkas</button>
+                <button class="categoria-chip" type="button" data-category="tequilas" aria-pressed="false">Tequilas</button>
+                <button class="categoria-chip" type="button" data-category="cocteles" aria-pressed="false">Cócteles</button>
+                <button class="categoria-chip" type="button" data-category="sin-alcohol" aria-pressed="false">Sin alcohol</button>
+            </div>
+
+            <div class="catalogo-resultados">
+                <p id="contadorResultados" class="texto-suave small mb-0" aria-live="polite">Cargando productos...</p>
+                <button class="btn btn-link btn-limpiar-filtros" id="restablecerFiltros" type="button">Limpiar filtros</button>
+            </div>
+
+            <div class="row g-3 g-xl-4" id="productosGrid" aria-live="polite">
+                <!-- Las tarjetas se generan desde js/carta.js -->
+            </div>
+
+            <div class="catalogo-vacio d-none" id="estadoVacio">
+                <span class="catalogo-vacio__icon">⌕</span>
+                <h3>No encontramos productos</h3>
+                <p>Prueba con otro nombre o selecciona una categoría diferente.</p>
+                <button class="btn btn-carta-secundario" id="verTodosProductos" type="button">Ver toda la carta</button>
+            </div>
+        </section>
+
+        <section class="container seccion-carta">
+            <div class="carta-cta">
+                <span class="eyebrow-mono">¿LISTO PARA EL PARCHE?</span>
+                <h2>Arma tu pedido y brinda con nosotros.</h2>
+                <p>Agrega tus productos al pedido y envíanos la solicitud por WhatsApp para confirmar disponibilidad, precios y entrega.</p>
+                <button class="btn btn-carta-principal" type="button" data-bs-toggle="offcanvas" data-bs-target="#panelCarrito" aria-controls="panelCarrito">Ver mi pedido</button>
+            </div>
+        </section>
     </main>
+    <script src="js/cerveza_destapar.js"></script>
 
     <footer class="bg-footer borde-superior pt-5 pb-4 mt-5">
         <div class="container">
@@ -59,8 +173,8 @@
                 <div class="col-12 col-md-6">
                     <h3 class="footer-heading texto-dorado mb-3">Canales de Atención</h3>
                     <ul class="list-unstyled texto-suave small d-flex flex-column gap-2 mb-0">
-                        <li><span class="etiqueta-mono">WHATSAPP:</span> <a href="https://wa.me/573001234567" class="link-footer" target="_blank" rel="noopener noreferrer">+57 300 123 4567</a></li>
-                        <li><span class="etiqueta-mono">INSTAGRAM:</span> <a href="https://instagram.com/cantina_losrecuerdosdeella" class="link-footer" target="_blank" rel="noopener noreferrer">@cantina_losrecuerdosdeella</a></li>
+                        <li><span class="etiqueta-mono"><i class="fa-brands fa-whatsapp"></i></span> <a href="https://wa.me/573001234567" class="link-footer" target="_blank" rel="noopener noreferrer">+57 300 123 4567</a></li>
+                        <li><span class="etiqueta-mono"><i class="fa-brands fa-instagram"></i></span> <a href="https://instagram.com/cantina_losrecuerdosdeella" class="link-footer" target="_blank" rel="noopener noreferrer">@cantina_losrecuerdosdeella</a></li>
                         <li><span class="etiqueta-mono">HORARIO:</span> Todos los días de 2:00 p.m. a 2:00 a.m.</li>
                     </ul>
                 </div>
@@ -72,6 +186,43 @@
         </div>
     </footer>
 
+    <!-- MODAL DE DETALLES Y GALERÍA -->
+    <div class="modal fade" id="modalProducto" tabindex="-1" aria-labelledby="modalProductoTitulo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content modal-producto">
+                <div class="modal-header">
+                    <span class="eyebrow-mono">DETALLES DEL PRODUCTO</span>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body" id="modalProductoContenido"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARRITO / PEDIDO -->
+    <div class="offcanvas offcanvas-end panel-carrito" tabindex="-1" id="panelCarrito" aria-labelledby="panelCarritoTitulo">
+        <div class="offcanvas-header">
+            <div>
+                <span class="eyebrow-mono">TU SELECCIÓN</span>
+                <h2 class="offcanvas-title" id="panelCarritoTitulo">Mi pedido</h2>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar pedido"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <div id="carritoContenido" class="carrito-contenido"></div>
+            <div class="carrito-footer mt-auto">
+                <div class="carrito-total-row">
+                    <span>Subtotal estimado</span>
+                    <strong id="carritoSubtotal">Por confirmar</strong>
+                </div>
+                <p class="carrito-nota">Los precios y la disponibilidad se confirman por WhatsApp. Este pedido es una solicitud, no un pago.</p>
+                <button class="btn btn-carta-principal w-100" id="enviarPedido" type="button" disabled>Enviar pedido por WhatsApp</button>
+                <button class="btn btn-link btn-vaciar w-100" id="vaciarCarrito" type="button">Vaciar pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROMOCIÓN EXISTENTE: SE CONSERVA -->
     <div class="modal fade" id="modalPromo" tabindex="-1" aria-labelledby="modalPromoTitulo" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content tarjeta-clara">
@@ -88,12 +239,13 @@
                 </div>
                 <div class="modal-footer border-top-dotted gap-3">
                     <button type="button" class="btn btn-borde-oscuro" data-bs-dismiss="modal">Cerrar</button>
-                    <a href="https://wa.me/573001234567" class="btn btn-oscuro-cta" target="_blank" rel="noopener noreferrer">Pedir promo &rarr;</a>
+                    <a href="https://wa.me/573001234567?text=Hola,%20quiero%20consultar%20por%20el%20Combo%20Pa%27%20Recordar." class="btn btn-oscuro-cta" target="_blank" rel="noopener noreferrer">Pedir promo &rarr;</a>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/carta.js"></script>
 </body>
 </html>
