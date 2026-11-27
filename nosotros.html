@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cantina Los Recuerdos de Ella en Manrique, Medellín. Licores garantizados, cervezas bien frías y ambiente tradicional de barrio.">
-    <title>Inicio | Cantina Los Recuerdos de Ella</title>
+    <meta name="description" content="Conoce la historia, tradición y el equipo detrás de la Cantina Los Recuerdos de Ella en Manrique, Medellín.">
+    <title>Nosotros | Cantina Los Recuerdos de Ella</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/kit.css">
-     <link rel="stylesheet" href="css/cerveza_cursor.css">
-     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/84e912a991.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/cerveza_cursor.css">
 </head>
 <body>
 
@@ -21,16 +21,17 @@
         <nav class="navbar navbar-expand-lg bg-superficie borde-inferior" aria-label="Navegación principal">
             <div class="container py-1">
                 <a class="navbar-brand" href="index.html">
-                    <span class="status-pulse"></span><img src="https://img.icons8.com/?size=100&id=2eyokYMv9Yng&format=png&color=000000" alt="">CANTINA LOS RECUERDOS DE ELLA
+                    <span class="status-pulse"></span><img src="img/logo.png" alt="logo de la cantina" width="90px" class="logo-cantina">CANTINA LOS RECUERDOS DE ELLA
                 </a>
                 <button class="navbar-toggler borde-marca" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa-regular fa-house"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="carta.html">La Carta</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                         <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
@@ -45,9 +46,303 @@
     </header>
 
     <main>
-       <h1>Quienes Somos?</h1>
+        <!-- 1. HERO DE IDENTIDAD -->
+        <section class="container seccion-espaciada" id="identidad">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-6">
+                    <span class="badge insignia-marca px-3 py-2 mb-3">
+                        <span class="status-pulse"></span>NUESTRA ESENCIA EN MANRIQUE
+                    </span>
+                    <h1 class="display-5 mb-3">Más que una cantina, somos el refugio de las buenas historias</h1>
+                    <p class="texto-suave mb-4">
+                        Nacimos en el corazón de Manrique con una idea sencilla: mantener viva la tradición de la cantina antioqueña de toda la vida. Aquí no hay poses ni etiquetas; hay sillas cómodas, música que llega al alma y el trago servido con honestidad.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#historia" class="btn btn-marca">Conoce nuestra historia</a>
+                        <a href="#recuerdos" class="btn btn-borde-oscuro">Explorar los recuerdos</a>
+                    </div>
+                </div>
 
-       
+                <div class="col-12 col-lg-6">
+                    <div class="marco-terminal">
+                        <div class="barra-terminal">
+                            <span class="etiqueta-mono"><i class="fa-solid fa-record-vinyl me-2"></i>ARCHIVO DE BARRIO</span>
+                            <span class="titulo-terminal">COMUNA 3 &bull; MEDELLÍN</span>
+                        </div>
+                        <div class="contenedor-imagen-hero">
+                            <img src="img/logo.png" alt="Interior y ambiente tradicional de Cantina Los Recuerdos de Ella" class="img-fluid imagen-hero w-100">
+                            <div class="overlay-imagen-hero"></div>
+                            <span class="etiqueta-flotante-hero">
+                                <i class="fa-solid fa-wine-bottle text-tiger-gold me-1"></i> Tradición, música y licores garantizados
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. CITA DESTACADA / MANIFIESTO -->
+        <section class="container py-3">
+            <div class="tarjeta-clara p-4 p-md-5 text-center">
+                <span class="eyebrow-mono d-block mb-2">EL ESPÍRITU DE LA CASA</span>
+                <blockquote class="mb-3 fs-4 fw-semibold text-white">
+                    “Porque los recuerdos pesan menos cuando se comparten entre amigos, con una fría en la mano y una buena canción de fondo.”
+                </blockquote>
+                <p class="texto-suave small mb-0">Cantina Los Recuerdos de Ella</p>
+            </div>
+        </section>
+
+        <!-- 3. LÍNEA DE TIEMPO (NUESTRA HISTORIA) -->
+        <section class="container seccion-espaciada" id="historia">
+            <div class="text-center mb-5">
+                <span class="eyebrow-mono d-block mb-2">TRAYECTORIA</span>
+                <h2 class="texto-dorado">De una barra de esquina al punto de encuentro del barrio</h2>
+                <p class="texto-suave">Cada mesa guarda anécdotas de vecinos, parceros y familias de Manrique.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <div class="linea-tiempo-cantina">
+                        <article class="hito-tiempo bg-tarjeta borde-marca p-4 mb-4">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                                <span class="indicador-dato positivo">ETAPA 01 // LOS INICIOS</span>
+                                <span class="horario-evento">El Primer Brindis</span>
+                            </div>
+                            <h3 class="texto-dorado mb-2">El sueño de abrir las puertas en Manrique</h3>
+                            <p class="texto-suave small mb-0">
+                                Todo comenzó con cuatro mesas de madera, una nevera llena de cerveza bien fría y el deseo de ofrecer un espacio seguro, cálido y sin pretensiones para los trabajadores y vecinos del sector.
+                            </p>
+                        </article>
+
+                        <article class="hito-tiempo bg-tarjeta borde-marca p-4 mb-4">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                                <span class="indicador-dato ambar">ETAPA 02 // IDENTIDAD</span>
+                                <span class="horario-evento">Nace el Nombre</span>
+                            </div>
+                            <h3 class="texto-dorado mb-2">¿Por qué “Los Recuerdos de Ella”?</h3>
+                            <p class="texto-suave small mb-0">
+                                El nombre nació entre tangos, boleros y música popular de los viernes por la noche, cuando cada cliente pedía una canción dedicada a ese amor inolvidable, a la madre o a los tiempos que ya pasaron.
+                            </p>
+                        </article>
+
+                        <article class="hito-tiempo bg-tarjeta borde-marca p-4">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                                <span class="indicador-dato positivo">ETAPA 03 // ACTUALIDAD</span>
+                                <span class="horario-evento">Hoy en la Comuna</span>
+                            </div>
+                            <h3 class="texto-dorado mb-2">Tradición renovada con sello de garantía</h3>
+                            <p class="texto-suave small mb-0">
+                                Hoy seguimos fieles a nuestra esencia: licores 100% originales con estampilla verificada, combos accesibles, eventos en vivo y la atención cercana donde todos nos conocemos por el nombre.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SECCIÓN INTERACTIVA: LA ROCKOLA DE LA CASA (TABS BOOTSTRAP) -->
+        <section class="container seccion-espaciada" id="recuerdos">
+            <div class="text-center mb-5">
+                <span class="eyebrow-mono d-block mb-2">INTERACTIVO &bull; AMBIENTE SONORO</span>
+                <h2 class="texto-dorado">los Recuerdos</h2>
+                <p class="texto-suave">Selecciona el ambiente musical y descubre lo que suena en nuestras noches.</p>
+            </div>
+
+            <div class="bg-tarjeta borde-marca p-4 p-md-5">
+                <ul class="nav nav-pills justify-content-center gap-2 mb-4" id="tabsRockola" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tab-cantina active" id="tab-despecho" data-bs-toggle="pill" data-bs-target="#panel-despecho" type="button" role="tab" aria-controls="panel-despecho" aria-selected="true">
+                            <i class="fa-solid fa-guitar me-2"></i>Despecho y Popular
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tab-cantina" id="tab-salsa" data-bs-toggle="pill" data-bs-target="#panel-salsa" type="button" role="tab" aria-controls="panel-salsa" aria-selected="false">
+                            <i class="fa-solid fa-compact-disc me-2"></i>Salsa de Golpe
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tab-cantina" id="tab-vallenato" data-bs-toggle="pill" data-bs-target="#panel-vallenato" type="button" role="tab" aria-controls="panel-vallenato" aria-selected="false">
+                            <i class="fa-solid fa-music me-2"></i>Vallenato Clásico
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="contenidoRockola">
+                    <!-- Panel 1 -->
+                    <div class="tab-pane fade show active" id="panel-despecho" role="tabpanel" aria-labelledby="tab-despecho" tabindex="0">
+                        <div class="row align-items-center g-4">
+                            <div class="col-12 col-md-7">
+                                <span class="indicador-dato ambar d-block mb-2">AMBIENTE // VIERNES Y SÁBADOS</span>
+                                <h3 class="texto-dorado mb-3">Himnos para cantar a todo pulmón</h3>
+                                <p class="texto-suave small mb-3">
+                                    Desde Darío Gómez y Luis Alberto Posada hasta Charrito Negro y Yeison Jiménez. El repertorio obligatorio para acompañar una media de Aguardiente Antioqueño en buena compañía.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="horario-evento">Maridaje ideal: Aguardiente + Limón y Sal</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <div class="tarjeta-clara p-3">
+                                    <p class="etiqueta-mono mb-2"><i class="fa-solid fa-volume-high me-2"></i>TOP 3 EN LA BARRA</p>
+                                    <ul class="list-unstyled small texto-suave mb-0 d-flex flex-column gap-2">
+                                        <li class="border-bottom-dotted pb-2">01. Nadie es Eterno — Darío Gómez</li>
+                                        <li class="border-bottom-dotted pb-2">02. El Precio de tu Error — Luis Alberto Posada</li>
+                                        <li>03. Quererte Fue un Error — Charrito Negro</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 2 -->
+                    <div class="tab-pane fade" id="panel-salsa" role="tabpanel" aria-labelledby="tab-salsa" tabindex="0">
+                        <div class="row align-items-center g-4">
+                            <div class="col-12 col-md-7">
+                                <span class="indicador-dato positivo d-block mb-2">AMBIENTE // TARDES DE FIN DE SEMANA</span>
+                                <h3 class="texto-dorado mb-3">Salsa brava y romántica de la vieja guardia</h3>
+                                <p class="texto-suave small mb-3">
+                                    En Medellín la salsa se lleva en la sangre. Sonidos de Héctor Lavoe, Frankie Ruiz, Grupo Niche y Willie Colón que encienden la conversación en cada mesa.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="horario-evento">Maridaje ideal: Ron Viejo de Caldas en las rocas</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <div class="tarjeta-clara p-3">
+                                    <p class="etiqueta-mono mb-2"><i class="fa-solid fa-volume-high me-2"></i>TOP 3 EN LA BARRA</p>
+                                    <ul class="list-unstyled small texto-suave mb-0 d-flex flex-column gap-2">
+                                        <li class="border-bottom-dotted pb-2">01. Periódico de Ayer — Héctor Lavoe</li>
+                                        <li class="border-bottom-dotted pb-2">02. La Cura — Frankie Ruiz</li>
+                                        <li>03. Cali Pachanguero — Grupo Niche</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 3 -->
+                    <div class="tab-pane fade" id="panel-vallenato" role="tabpanel" aria-labelledby="tab-vallenato" tabindex="0">
+                        <div class="row align-items-center g-4">
+                            <div class="col-12 col-md-7">
+                                <span class="indicador-dato ambar d-block mb-2">AMBIENTE // DOMINGOS DE PARCEROS</span>
+                                <h3 class="texto-dorado mb-3">Acordeón y sentimiento para cerrar la semana</h3>
+                                <p class="texto-suave small mb-3">
+                                    Las letras eternas de Diomedes Díaz, Rafael Orozco y Los Inquietos del Vallenato que convierten cualquier domingo en una tertulia inolvidable.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="horario-evento">Maridaje ideal: Cubetazo de Cerveza Bien Fría</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <div class="tarjeta-clara p-3">
+                                    <p class="etiqueta-mono mb-2"><i class="fa-solid fa-volume-high me-2"></i>TOP 3 EN LA BARRA</p>
+                                    <ul class="list-unstyled small texto-suave mb-0 d-flex flex-column gap-2">
+                                        <li class="border-bottom-dotted pb-2">01. Sin Medir Distancias — Diomedes Díaz</li>
+                                        <li class="border-bottom-dotted pb-2">02. Solo para Ti — Rafael Orozco</li>
+                                        <li>03. Primavera Azul — Los Inquietos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. NUESTROS VALORES Y PREGUNTAS FRECUENTES -->
+        <section class="container seccion-espaciada" id="compromiso">
+            <div class="row g-4 align-items-start">
+                <!-- Columna izquierda: 3 pilares -->
+                <div class="col-12 col-lg-6">
+                    <span class="eyebrow-mono d-block mb-2">LO QUE NOS DEFINE</span>
+                    <h2 class="texto-dorado mb-4">Compromiso con cada cliente</h2>
+
+                    <div class="d-flex flex-column gap-3">
+                        <article class="bg-tarjeta borde-marca p-3">
+                            <div class="indicador-dato positivo mb-1">01 // CONFIANZA</div>
+                            <h3 class="texto-dorado mb-1">Cero licor adulterado</h3>
+                            <p class="texto-suave small mb-0">Compramos únicamente a distribuidores autorizados. Puedes revisar el sello y la estampilla de tu botella directamente en tu mesa.</p>
+                        </article>
+
+                        <article class="bg-tarjeta borde-marca p-3">
+                            <div class="indicador-dato mb-1">02 // HOSPITALIDAD</div>
+                            <h3 class="texto-dorado mb-1">Atención de familia</h3>
+                            <p class="texto-suave small mb-0">Aquí no eres un número de mesa; te recibimos con una sonrisa, buen trato y rapidez para que disfrutes sin contratiempos.</p>
+                        </article>
+
+                        <article class="bg-tarjeta borde-marca p-3">
+                            <div class="indicador-dato ambar mb-1">03 // BIENESTAR</div>
+                            <h3 class="texto-dorado mb-1">Consumo responsable</h3>
+                            <p class="texto-suave small mb-0">Contamos siempre con bebidas hidratantes y te ayudamos a gestionar tu transporte seguro al finalizar la noche.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Columna derecha: Acordeón interactivo -->
+                <div class="col-12 col-lg-6">
+                    <span class="eyebrow-mono d-block mb-2">DUDAS COMUNES</span>
+                    <h2 class="texto-dorado mb-4">Preguntas sobre la cantina</h2>
+
+                    <div class="accordion acordeon-cantina bg-tarjeta borde-marca p-2" id="faqNosotros">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                    ¿Puedo pedir canciones en la rockola?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqNosotros">
+                                <div class="accordion-body texto-suave small">
+                                    ¡Por supuesto! Nuestra programación musical está hecha para el público. Solo pídele tu tema favorito al encargado de la barra y lo ponemos en cola.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    ¿Hacen celebraciones de cumpleaños o reuniones?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqNosotros">
+                                <div class="accordion-body texto-suave small">
+                                    Sí, reservamos mesas para grupos sin costo adicional por el espacio. Escríbenos por WhatsApp o en la sección de Contacto para separar tu lugar.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    ¿Tienen servicio a domicilio en Manrique?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqNosotros">
+                                <div class="accordion-body texto-suave small">
+                                    Sí, despachamos botellas, cervezas frías y combos directamente hasta tu casa en el sector de Manrique dentro de nuestro horario de atención.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CALL TO ACTION FINAL -->
+        <section class="container seccion-espaciada pt-2">
+            <div class="bg-tarjeta borde-marca p-4 p-md-5 text-center">
+                <span class="badge insignia-marca px-3 py-2 mb-3">
+                    <span class="status-pulse"></span>TE ESPERAMOS EN LA BARRA
+                </span>
+                <h2 class="texto-dorado mb-3">¿Listo para brindar por los buenos recuerdos?</h2>
+                <p class="texto-suave mx-auto mb-4" style="max-width: 560px;">
+                    Revisa nuestra carta de licores y cervezas o agenda tu mesa para este fin de semana en Manrique.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="carta.html" class="btn btn-marca px-4">Ver La Carta</a>
+                    <a href="contacto.html" class="btn btn-borde-oscuro px-4">Ubícanos / Reservar</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="js/cerveza_destapar.js"></script>
@@ -88,7 +383,7 @@
                 </div>
                 <div class="modal-body">
                     <p class="mb-2">Todos los viernes y sábados hasta las 12:00 a.m.:</p>
-                    <p class="fw-medium mb-2 text-tiger-gold">1 Botella de Aguardiente Antioqueño + 2 Electrolit + hielo gratis.</p>
+                    <p class="fw-medium mb-2 text-tiger-gold">1 Botella de Aguardiente Antioqueño + 2 Electrolit; Por solo $50,000 </p>
                     <p class="small mb-0 opacity-75">Válido para consumo en barra o domicilio en el sector de Manrique.</p>
                 </div>
                 <div class="modal-footer border-top-dotted gap-3">

@@ -47,18 +47,20 @@
    -------------------------------------------------------------------------- */
 html {
     background-color: var(--color-void-canvas);
+    overflow-x: clip;
 }
 
 body {
     position: relative;
     min-height: 100vh;
+    padding-top: 76px;
     background-color: transparent !important;
     color: var(--color-frost-text);
     font-family: var(--font-inter);
     font-size: var(--text-body);
     font-weight: 400;
     line-height: 1.55;
-    overflow-x: hidden;
+    
 }
 
 body::before {
@@ -99,7 +101,13 @@ footer {
     z-index: 1;
 }
 
+header,
 header.sticky-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     z-index: 1030;
 }
 

@@ -1,6 +1,5 @@
 html, body {
     margin: 0;
-    height: 100%;
 /*     background: #ffffff; */
     /* Cursor de cerveza: punto activo en la tapa (centro superior) */
     cursor: url("../img/cerveza-cursor.png") 6 2, auto;

@@ -61,6 +61,7 @@
    -------------------------------------------------------------------------- */
 .navbar {
     padding: 12px 0;
+    overflow: visible;
 }
 
 .navbar-brand {
@@ -499,4 +500,68 @@
 .acordeon-cantina .accordion-body {
     background-color: rgba(12, 10, 9, 0.5);
     padding: 14px 16px;
+}
+
+/* Apartado para la pagina de nosotros */
+
+/* --------------------------------------------------------------------------
+   Línea de tiempo y Tabs interactivos (Página Nosotros)
+   -------------------------------------------------------------------------- */
+.linea-tiempo-cantina {
+    position: relative;
+    padding-left: 28px;
+}
+
+.linea-tiempo-cantina::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 12px;
+    bottom: 12px;
+    width: 2px;
+    background: linear-gradient(
+        180deg,
+        var(--color-amber-glow) 0%,
+        rgba(245, 166, 35, 0.25) 100%
+    );
+}
+
+.hito-tiempo {
+    position: relative;
+    overflow: visible;
+}
+
+.hito-tiempo::after {
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: 26px;
+    width: 12px;
+    height: 12px;
+    border-radius: var(--radius-pills);
+    background-color: var(--color-amber-glow);
+    box-shadow: 0 0 12px rgba(245, 166, 35, 0.9);
+    border: 2px solid var(--color-void-canvas);
+}
+
+.tab-cantina {
+    background-color: rgba(14, 11, 10, 0.72);
+    border: 1px solid rgba(245, 166, 35, 0.28);
+    color: var(--color-misted-slate);
+    border-radius: var(--radius-pills);
+    padding: 8px 18px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.tab-cantina:hover {
+    border-color: var(--color-amber-glow);
+    color: var(--color-cloud-white);
+}
+
+.tab-cantina.active {
+    background: linear-gradient(135deg, var(--color-amber-soft) 0%, var(--color-amber-glow) 100%) !important;
+    color: #140e0a !important;
+    border-color: rgba(255, 213, 132, 0.85);
+    box-shadow: 0 6px 18px -4px rgba(245, 166, 35, 0.55);
 }
